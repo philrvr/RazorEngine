@@ -107,10 +107,8 @@
             /// </summary>
             /// <param name="invocation">The invocation to cross the <see cref="AppDomain"/>.</param>
             /// <returns>The result of the invocation on the wrapped instance.</returns>
-            [SecuritySafeCritical]
             public object GetResult(Invocation invocation)
             {
-                (new PermissionSet(PermissionState.Unrestricted)).Assert();
                 object result = null;
                 string name = invocation.Name.Name;
                 object[] args = invocation.Args;
