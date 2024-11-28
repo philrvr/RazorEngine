@@ -6,6 +6,7 @@ nuget Nuget.CommandLine
 nuget FAKE
 nuget FSharp.Formatting prerelease
 nuget System.ValueTuple
+nuget Microsoft.AspNet.Mvc
 nuget Microsoft.AspNet.Razor
 
 group Net45
