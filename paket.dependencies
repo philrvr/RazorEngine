@@ -1,5 +1,5 @@
-version 5.0.0
-source https://nuget.org/api/v2
+version 5.258.1
+source https://api.nuget.org/v3/index.json
 source https://ci.appveyor.com/nuget/fsharp-formatting
 
 nuget Nuget.CommandLine
@@ -10,27 +10,27 @@ nuget Microsoft.AspNet.Razor
 
 group Net45
   condition: NET45
-  source https://nuget.org/api/v2
+  source https://api.nuget.org/v3/index.json
 
   nuget Microsoft.AspNet.Razor ~> 3.0
   nuget Microsoft.CodeAnalysis != 1.0.0-rc2
 
 group Net40
   condition: NET40
-  source https://nuget.org/api/v2
+  source https://api.nuget.org/v3/index.json
   framework: net40
 
   nuget Microsoft.AspNet.Razor ~> 2.0
 
 group Razor4
   condition: RAZOR4
-  source https://nuget.org/api/v2
+  source https://api.nuget.org/v3/index.json
 
   nuget Microsoft.AspNetCore.Razor ~> 1.0
   nuget Microsoft.CodeAnalysis != 1.0.0-rc2
 
 group Test
-  source https://nuget.org/api/v2
+  source https://api.nuget.org/v3/index.json
 
   nuget NUnit ~> 3.6
   nuget NUnit.Console ~> 3.6
